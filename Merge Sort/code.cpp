@@ -23,8 +23,6 @@ void merge(int arr[], int l, int m, int r)
             arr[k]=L[i],i++;
         else
             arr[k]=R[j],j++;
-
-        total_comparisons++;
         k++;
     }
 
@@ -44,6 +42,7 @@ void merge(int arr[], int l, int m, int r)
 }
 
 void mergeSort(int arr[],int l,int r){
+    total_comparisons++;
     if(l>=r)
         return;
 
