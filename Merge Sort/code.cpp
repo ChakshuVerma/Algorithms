@@ -11,14 +11,15 @@ void merge(int arr[], int l, int m, int r)
     int L[n1], R[n2];
 
     for(int i = 0; i < n1; i++)
-        L[i] = arr[l + i];
+        L[i] = arr[l + i],total_comparisons++;
     for(int j = 0; j < n2; j++)
-        R[j] = arr[m + 1 + j];
+        R[j] = arr[m + 1 + j],total_comparisons++;
 
     int i=0,j=0,k=l;
 
     while(i<n1 && j<n2)
     {
+        total_comparisons++;
         if(L[i]<=R[j])
             arr[k]=L[i],i++;
         else
@@ -28,6 +29,7 @@ void merge(int arr[], int l, int m, int r)
 
     while (i < n1)
     {
+        total_comparisons++;
         arr[k]=L[i];
         i++;
         k++;
@@ -35,6 +37,7 @@ void merge(int arr[], int l, int m, int r)
 
     while (j < n2)
     {
+        total_comparisons++;
         arr[k]=R[j];
         j++;
         k++;
@@ -56,7 +59,7 @@ void printArray(int A[], int size)
 {
     for (int i = 0; i < size; i++)
         cout << A[i] << " ";
-    cout<<"\nTotal Comparsions : "<<total_comparisons<<endl;
+    cout<<"\nTotal Comparisons : "<<total_comparisons<<endl;
 }
 
 int main()
