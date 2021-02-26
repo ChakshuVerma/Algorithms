@@ -13,7 +13,7 @@ void insertion_Sort(int arr[], int n)
 		{
 			arr[j+1]=arr[j];
 			j--;
-            count++;
+            		count++;
 		}
 		count++;
 
