@@ -32,7 +32,7 @@ struct DisjointSets
         rnk = new int[n+1];
   
         for (int i = 0; i <= n; i++)
-        {
+        { 
             //Initially every node is it's own parent and they have a rank of 0 as the size of it's set is 1
             rnk[i] = 0;
             parent[i] = i;
