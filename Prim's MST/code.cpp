@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-  
+   
 #define V 5 
   
 int minKey(int key[], bool mstSet[]) 
