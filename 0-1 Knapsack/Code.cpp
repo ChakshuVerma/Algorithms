@@ -40,12 +40,12 @@ int main()
     
     int val[n],wt[n];
     
-    cout<<"\n\nEnter weights of items: "
+    cout<<"\n\nEnter weights of items: ";
     for(int i=0; i<n; i++){
         cin>>wt[i];
     }
     
-    cout<<"\n\nEnter prices of items: "
+    cout<<"\n\nEnter prices of items: ";
     for(int i=0; i<n; i++){
         cin>>val[i];
     }
