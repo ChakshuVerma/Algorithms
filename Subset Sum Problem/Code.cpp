@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-using nampespace std;
+using namespace std;
 
 bool isSubsetSum(int set[], int n, int sum)
 {
@@ -26,9 +26,12 @@ bool isSubsetSum(int set[], int n, int sum)
  
 int main()
 {
+    
+    int n,sum;
     cout<<"Enter number of elements: ";
-    int n,set[],sum;
+    
     cin>>n;
+    int set[n];
     
     cout<<"\n\nEnter Elements: ";
     for(int i=0; i<n; i++){
